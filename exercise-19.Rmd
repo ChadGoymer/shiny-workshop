@@ -1,0 +1,19 @@
+---
+title: "Exercise 19"
+author: "Chad Goymer"
+date: "14 September 2015"
+output: html_document
+---
+
+Here is a scatter plot of the mtcars dataset. mpg vs disp
+
+```{r echo=FALSE, fig.width=5, fig.height=5}
+plot(mtcars$mpg, mtcars$disp)
+```
+
+The coefficients of a fitted linear model are:
+
+```{r}
+mod <- lm(mpg ~ disp, data = mtcars)
+coef(mod)
+```
